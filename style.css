@@ -128,7 +128,7 @@ margin-right: 0.5rem;
     align-items: center;
     justify-content: center;
     display: flex;
-    transition: 2s ease-in-out;
+    transition: 0.2s ease-in-out;
     flex-direction: column;
     cursor: pointer;
 }
@@ -140,4 +140,16 @@ margin-right: 0.5rem;
 }
 .box h3{
     font-size: clamp(18px 3vw 22px);
+}
+.box:hover, .box:active{
+background-color: var(--accent2);
+color:var(--ligh) !important;
+transform: translateY(-12px);
+}
+#product{
+    padding: 50px 100px;
+}
+.products-container{
+    justify-content: space-evenly;
+    align-items: center;
 }
