@@ -190,13 +190,16 @@ border-radius: 1rem;
 form{
     width: 100%;
     display: flex;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;flex-direction: column;
+    max-width: 900px;
 }
 form input, form textarea{
     width: 100%;
     height: 50px;
     padding: 5px;
+    resize: none;
     margin: 1rem 0;
     border-radius: 7px;
     border: 1px solid rgb(241, 222, 222);
@@ -204,6 +207,18 @@ form input, form textarea{
 }
 form input:focus, form textarea:focus{
 background-color: var(--bg);
+}
+form textarea{
+    resize: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    height: 150px;
+}
+form button{
+    cursor: pointer;
+    margin: 20px;
 }
 .copy{
  color:var(--text);
