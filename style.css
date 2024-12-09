@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jaro:opsz@6..72&family=Lora:ital,wght@0,400..700;1,400..700&family=Parisienne&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/* initialisation des  proprietes generales */
+
+
 *{
     padding: 0;
     margin: 0;
@@ -12,9 +16,15 @@
     text-decoration: none;
     list-style: none;
 }
+
 body{
     overflow-x: hidden;
+    color:var(--text);
 }
+
+
+
+/* initialisation des couleurs generales */
 :root{
     --accent:#a90202;
     --accent2:#4f0202;
@@ -22,9 +32,14 @@ body{
     --ligh:#fff;
     --bg:#ffc53d;
 }
-body{
-    color:var(--text);
-}
+
+
+
+
+
+
+/* partie destinee au header */
+
 nav{
     position: absolute;
     width: 100%;
@@ -62,6 +77,13 @@ align-items: center;
 .btn-nav:hover{
 background-color: var(--accent2);
 }
+
+
+
+/* partie destinee au home / accueil */
+
+
+
 #home{
     
      height: 100vh;
@@ -110,7 +132,16 @@ margin-right: 0.5rem;
 .btn:hover{
     background-color: var(--accent2);
 }
+
+
+
 /* =======sections services */
+
+
+
+
+
+
 #services{
     padding: 50px 100px;
 }
@@ -161,7 +192,7 @@ color:var(--ligh) !important;
 transform: translateY(-12px);
 }
 #product{
-    padding: 50px 20px;
+    padding: 50px 20px 20px 20px;
 }
 .products-container{
     display: grid;
@@ -216,6 +247,10 @@ border-radius: 1rem;
     font-weight: 400;
     max-width: 95%;
 }
+
+/* partie destinee aux formulaires */
+
+
 #contact{
     padding: 50px 20px;
     width: 100%;
@@ -256,17 +291,22 @@ form button{
     cursor: pointer;
     margin: 20px;
 }
+
+
+/* partie copyright */
+
+
 .copy{
  color:var(--text);
  font-size: 1.15rem;
  text-align: center;
- /* display:block; */
+ 
  padding: 10px 15px;
  margin-top: 40px;
  width: 100%;
 align-items: center;
 justify-content: center;
-/* margin: 0 auto; */
+
  
  border-radius: 10px;
  background-color: var(--bg);
@@ -274,6 +314,7 @@ justify-content: center;
 
 
 /* partie responsive */
+
 
 @media screen and (max-width:1300px) {
     .products-container{
@@ -304,10 +345,9 @@ justify-content: center;
     height: auto;
 }
 
-
-
 }
-@media screen and (max-width:770px) {
+
+@media screen and ( max-width:770px ) {
     form input, form textarea{
 width: 95%;
 
