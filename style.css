@@ -7,6 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     outline: none;
+   
     font-family: 'Poppins', sans -serif;
     text-decoration: none;
     list-style: none;
@@ -261,20 +262,36 @@ margin: 0 auto;
 
 
 /* partie responsive */
+
 @media screen and (max-width:1300px) {
     .products-container{
         display: flex;
         gap:60px;
         flex-wrap: wrap;
 
-        /* flex-direction: column; */
+      
     }
     .products-container .product-box{
         justify-content: center;
         align-items: center;
-        /* display: flex; */
+       
         margin: 0 auto;
     }
 }
 
-@media screen and (max-width:1300px) {}
+@media screen and (max-width:1030px) {
+#home{
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-x: hidden;
+    width: 100vw;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    height: auto;
+}
+
+
+
+}
