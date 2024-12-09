@@ -188,6 +188,12 @@ background-color: var(--accent2);
 color:var(--ligh) !important;
 transform: translateY(-12px);
 }
+
+
+
+/* partie destines a la section product */
+
+
 #product{
     padding: 50px 20px 20px 20px;
 }
@@ -213,6 +219,11 @@ width: 100%;
     align-items: center;
     display: flex;
 }
+
+.products-container .product-box .content{
+    text-align: center;
+}
+
 .p-box{
 
 height: 400px;
