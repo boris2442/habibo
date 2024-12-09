@@ -260,12 +260,13 @@ form button{
  color:var(--text);
  font-size: 1.15rem;
  text-align: center;
- display:block;
+ /* display:block; */
  padding: 10px 15px;
  margin-top: 40px;
+ width: 100%;
 align-items: center;
 justify-content: center;
-margin: 0 auto;
+/* margin: 0 auto; */
  
  border-radius: 10px;
  background-color: var(--bg);
