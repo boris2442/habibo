@@ -11,6 +11,9 @@
     text-decoration: none;
     list-style: none;
 }
+body{
+    overflow-x: hidden;
+}
 :root{
     --accent:#a90202;
     --accent2:#4f0202;
@@ -154,7 +157,7 @@ color:var(--ligh) !important;
 transform: translateY(-12px);
 }
 #product{
-    padding: 50px 100px;
+    padding: 50px 20px;
 }
 .products-container{
     display: grid;
@@ -164,7 +167,8 @@ transform: translateY(-12px);
     gap:20px;
    padding: 2rem 0;
    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    /* place-items: center; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, auto)); */
 
 }
 #populaires{
@@ -228,10 +232,13 @@ background-color: var(--bg);
 }
 form textarea{
     resize: none;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* text-align: center;
+    
 
+    justify-content: center;*/
+    align-items: center; 
+display: flex;
+padding: 20px;
     height: 150px;
 }
 form button{
@@ -251,3 +258,23 @@ margin: 0 auto;
  border-radius: 10px;
  background-color: var(--bg);
 }
+
+
+/* partie responsive */
+@media screen and (max-width:1300px) {
+    .products-container{
+        display: flex;
+        gap:60px;
+        flex-wrap: wrap;
+
+        /* flex-direction: column; */
+    }
+    .products-container .product-box{
+        justify-content: center;
+        align-items: center;
+        /* display: flex; */
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1300px) {}
