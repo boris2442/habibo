@@ -63,11 +63,13 @@ align-items: center;
 background-color: var(--accent2);
 }
 #home{
-     width: 100%;
-     height: 100vh;
+     /* width: 100%; */
+     /* height: 100vh; */
      display: grid;
      grid-template-columns: 45% 55%;
      grid-template-rows: auto;
+     /* width: 800px; */
+     margin: 0;
      place-items: center;
      padding: 0 100px;
      background-color: var(--bg);
@@ -166,7 +168,7 @@ transform: translateY(-12px);
     width: 100%;
 
     gap:20px;
-   padding: 2rem 0;
+   padding: 2rem 1rem 2rem 1rem;
    grid-template-columns: 1fr 1fr 1fr;
     /* place-items: center; */
     /* grid-template-columns: repeat(auto-fit, minmax(300px, auto)); */
@@ -177,11 +179,19 @@ transform: translateY(-12px);
 width: 100%;
    
 }
+.product-box{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 .p-box{
-width: 500px;
+/* width: 500px; */
 height: 400px;
-overflow: hidden;
+/* overflow: hidden; */
 display: flex;
+margin: 0 auto;
+padding: 30px;
+text-align: justify;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -208,15 +218,17 @@ border-radius: 1rem;
 #contact{
     padding: 50px 100px;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 form{
     width: 100%;
     display: flex;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: 0px;
     align-items: center;
-    justify-content: center;flex-direction: column;
-    max-width: 900px;
+    justify-content: center;
+    flex-direction: column;
+    /* max-width: 900px; */
 }
 form input, form textarea{
     width: 100%;
@@ -254,7 +266,7 @@ form button{
  margin-top: 40px;
 align-items: center;
 justify-content: center;
-margin: 0 auto;
+/* margin: 0 auto; */
  width: 300px;
  border-radius: 10px;
  background-color: var(--bg);
@@ -275,7 +287,7 @@ margin: 0 auto;
         justify-content: center;
         align-items: center;
        
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 }
 
@@ -286,7 +298,7 @@ margin: 0 auto;
     align-items: center;
     display: flex;
     overflow-x: hidden;
-    width: 100vw;
+    /* width: 100vw; */
     flex-wrap: wrap;
     padding-bottom: 60px;
     height: auto;
