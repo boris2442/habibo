@@ -18,4 +18,29 @@ const sr=ScrollReveal({
     distance:"30px",
     reset:true
 })
-sr.reveal(".home, .services, .product, .contact, .copy", {interval:200})
+sr.reveal(".home, .services, .et-a-decouvrir, .product, .contact, .copy", {interval:200})
+
+
+// partie destinee au swiper
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

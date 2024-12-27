@@ -372,3 +372,31 @@ width: 95%;
     }
     
 }
+
+
+
+/* partie destiner a la librairie swiper */
+
+.et-a-decouvrir{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swiper {
+margin: 30px;
+   max-width: 500px;
+   background-color: var(--bg);
+   border-radius: 7px;
+    height: 400px;
+  }
+  .swiper-slide{
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide img{
+    width: 100%;
+    height: 100%;
+  }
