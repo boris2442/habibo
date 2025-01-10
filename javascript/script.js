@@ -47,3 +47,9 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+// chargement  de la page
+  window.onload = function() {
+    document.querySelector('.loader').style.display = 'none';
+    document.querySelector('.loader').style.transition='5s ease-out'
+  };
